@@ -208,6 +208,13 @@ input, select, textarea {
 		top: 0;
 		width: 100%;
 	}
+	/* mobile bg */
+@media only screen and (max-width: 600px) {
+    #header {
+        background-image: url('images/bg2.jpg');
+    }
+}
+
 
 /* BG */
 
@@ -226,7 +233,7 @@ input, select, textarea {
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #348cb2 url("images/bg.jpg") bottom left;
+		background: #4B0082 url("images/bg.jpg") bottom left;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
