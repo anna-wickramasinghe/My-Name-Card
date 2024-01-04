@@ -208,12 +208,7 @@ input, select, textarea {
 		top: 0;
 		width: 100%;
 	}
-	/* mobile bg */
-@media only screen and (max-width: 600px) {
-    #header {
-        background-image: url('images/bg2.jpg');
-    }
-}
+	
 
 
 /* BG */
@@ -233,13 +228,27 @@ input, select, textarea {
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #4B0082 url("images/bg.jpg") bottom left;
+		background: #000 url("images/bg.jpg") bottom left;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
 		opacity: 1;
 		position: fixed;
 		top: 0;
+	}
+
+	#bg::before {
+	    /* Add the second image underneath the primary image */
+	    content: "";
+	    position: fixed; /* Set the position to fixed */
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background: url("images/bg.jpg") bottom left;
+	    background-repeat: repeat-x;
+	    opacity: 0.5; /* Adjust the opacity as needed */
+	    z-index: -1; /* Move the ::before image to the back */
 	}
 
 	@-moz-keyframes bg {
